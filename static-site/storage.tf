@@ -11,9 +11,3 @@ resource "azurerm_storage_account" "storage" {
         error_404_document = var.error_page
     }
 }
-
-resource "azurerm_storage_container" "web" {
-    name = "$web"
-    storage_account_name = azurerm_storage_account.storage.name
-}
-
