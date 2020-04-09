@@ -4,34 +4,34 @@ variable "env" {}
 variable "location" {}
 
 variable "origin_name" {
-    default = "app"
+  default = "app"
 }
 
 variable "sku" {
-    default = "Standard_Microsoft"
+  default = "Standard_Microsoft"
 }
 
 variable "account_tier" {
-    default = "Standard"
+  default = "Standard"
 }
 
 variable "replication_type" {
-    default = "LRS"
+  default = "LRS"
 }
 
 variable "entry_point" {
-    default = "index.html"
+  default = "index.html"
 }
 
 variable "error_page" {
-    default = "404.html"
+  default = "404.html"
 }
 
 variable "full_env_name" {
-    type = map
-    default = {
-        test = "Test"
-        stag = "Staging"
-        prod = "Production"
-    }
+  type = map
+  default = {
+    test = "Test"
+    stag = "Staging"
+    prod = "Production"
+  }
 }
