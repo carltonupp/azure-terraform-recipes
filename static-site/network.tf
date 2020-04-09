@@ -15,5 +15,5 @@ resource "azurerm_cdn_endpoint" "cdn" {
     origin {
         name      = var.origin_name
         host_name = azurerm_storage_account.storage.primary_web_endpoint
-  }
+    }
 }
